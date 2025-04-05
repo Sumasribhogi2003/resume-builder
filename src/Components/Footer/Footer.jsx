@@ -1,5 +1,5 @@
 import { Box, chakra, Container, Stack, Text, Image, useColorModeValue, VisuallyHidden, } from '@chakra-ui/react';
-import { FaInstagram, FaSnapchat, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaGithub } from 'react-icons/fa';
 import logo from './../../Assets/logo.png';
 
 
@@ -41,15 +41,15 @@ export default function Footer() {
                 justify={{ base: 'center', md: 'space-between' }}
                 align={{ base: 'center', md: 'center' }}>
                 <Image style={{ height: '44px' }} src={logo} alt="logo" />
-                <Text>© 2023 Resume Builder, All rights reserved</Text>
+                <Text>© 2025 Resume Builder, All rights reserved</Text>
                 <Stack direction={'row'} spacing={6}>
-                    <SocialButton label={'Github'} href={'https://github.com/imhardikdesai'}>
+                    <SocialButton label={'Github'} href={'https://github.com/Sumasribhogi2003'}>
                         <FaGithub />
                     </SocialButton>
-                    <SocialButton label={'Snapchat'} href={'https://twitter.com/imhardikdesai'}>
+                    {/* <SocialButton label={'Snapchat'} href={'https://twitter.com/imhardikdesai'}>
                         <FaSnapchat />
-                    </SocialButton>
-                    <SocialButton label={'Instagram'} href={'https://instagram.com/imhardikdesai'}>
+                    </SocialButton> */}
+                    <SocialButton label={'Instagram'} href={'https://instagram.com/sumasri_bhogi'}>
                         <FaInstagram />
                     </SocialButton>
                 </Stack>

@@ -1,20 +1,20 @@
-import { Avatar, Box, chakra, Flex, Icon, SimpleGrid, useColorModeValue, } from '@chakra-ui/react';
+import {  Box, chakra, Flex, Icon, SimpleGrid, useColorModeValue, } from '@chakra-ui/react';
 import { Helmet } from 'react-helmet';
 
 const testimonials = [
     {
-        name: 'Hardik Desai',
-        role: 'Fronted Web Developer',
+        name: 'Bhogi Sumasri',
+        role: 'Software Developer',
         content:
             'A resume builder website is a web-based tool that allows users to create and customize a professional resume to their desired specifications. These websites typically provide templates for creating a resume.',
-        avatar:
-            'https://avatars.githubusercontent.com/u/87645745?v=4',
+        
+
     }
 ];
 
 
 function TestimonialCard(props) {
-    const { name, role, content, avatar } = props;
+    const { name, role, content } = props;
     return (
         <Flex
             boxShadow={'lg'}
@@ -73,13 +73,13 @@ function TestimonialCard(props) {
                     </chakra.span>
                 </chakra.p>
             </Flex>
-            <Avatar
+            {/* <Avatar
                 src={avatar}
                 height={'80px'}
                 width={'80px'}
                 alignSelf={'center'}
                 m={{ base: '0 0 35px 0', md: '0 0 0 50px' }}
-            />
+            /> */}
         </Flex>
     );
 }
